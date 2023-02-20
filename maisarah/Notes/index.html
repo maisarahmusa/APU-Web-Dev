@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes: APU Web Dev</title>
+
+    <style>
+        table{
+            width: 100%;
+        }
+        
+        table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        thead{
+            text-align: center;
+            font-weight: bold;
+        }
+        tfoot{
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        th, td{
+            /* padding = spacing */
+            padding: 15px; 
+        } 
+    </style>
+</head>
+<body>
+    <h2>Module 1 | Module 2</h2>
+    <em>Date: 8 February 2023</em>
+
+    
+    <p>
+        "<" = open-tag, /> = close-tag
+        1) The content would be inside of the tag
+        Verbose Document Structure
+        <br>
+        1) The browser is not strict (still can display content) - cons: need to format doc properly
+        <br>
+        2) not much info can be taken in html (browser)
+        <br>
+        3) Always starting w DOCTYPE HTML- document type HTML - must appear at the top
+        <br>
+        4) Manifest function: application cache - Load faster than the 1st time (browser know)
+        <br>
+        5) html has opening & closing tag
+        <br>
+        6) title of the page (display to the web/browser)
+        <br>
+        7) body - body content
+        <br>
+        8) always starting with html
+        <br>
+        9) meta tag - information to give *not necessary - additional keyword of the page - use to adapt 
+        <br>
+        10) viewport - are we provide sufficient info?
+        <br>
+        11) keyword - search changing (google, yahoo - user search for a keyword - the more the precise of the result page)
+        <br>
+        12) concern about the content viewed by user/clients
+        <br>
+        13) provide standard doc to avoid any errors
+        <br>
+        14) h1 to h6
+    </p>
+
+    <p>
+        Classic tag - display the older browser (not recognize semantic tag) eg: [ <i>Test</i> / <b>Test</b> ]
+        <br>
+        Semantic tag - *updated browser - rendering the content - can predict wht does text mean
+    </p>
+
+    <p>
+        div - to section the contents - content (web - navigation, header, footer etc) - format the container
+        <br>
+        span - subsction content inline
+        <br>
+        br / breakline - it doesn't have closing breakline (optional)
+
+    <h4>Special Characters</h4>
+
+        <p>Jangan lupakan server</p>
+        <p>Maisarah</p>
+
+        <i style="color: #837572;">Twinkle Twinkle Little Star</i>
+
+        header mesti dlm html
+    </p>
+
+<hr>
+<em>Date: 9 February 2023</em>
+<h3>Hyperlink</h3>
+<table>
+    <thead>
+        <tr>
+            <th>External Hyperlink</th>
+            <th>Internal Hyperlink</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>a tag - anchor - bring to another page
+                <a href="https:/blabla.com">edX Website </a>
+                href = link (target source to go)
+            </td>
+            <td>
+                <a href="#coolElement">edX Website </a>
+                If it clicks, it would go to that section. 
+                It will give in 'id' on the same page.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Hyperlink Targets:</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <li>target is an attribute.</li>
+                <li>target = when hyperlink clicks, it would go to the another page (new window).</li>
+                <li>as for : <base target="_blank"> all the links inside of the page will pop-out to the new window.</li>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Text Link:</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <li><a href ="#">Click me</a>
+                    # = pages inside of the app</li>
+                <li>a tag- can be used for text or image</li>
+                <li>image would be placed inside of anchor tag.</li>
+                <li>Feature Download <br>
+                    - set value of true or false
+                </li>
+                <li>id must be unique (cannot be repeated on the same page)
+                </li>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Link to an email address</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <li>mailto:example@gmail.com?subject=Hi</li>
+                <li>? = format</li>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Style Hyperlink - change the colour, etc
+                4 states/conditions
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <li>a:link - normal link (any colour)</li>
+                <li>a:visited - link has been visited (link turns purple colour (already clicked))</li>
+                <li>a:hover - as the user moves the cursor towards link</li>
+                <li>a:active - when click the link, hold it and start to load. (after mouse release)</li>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Image</h3>
+<li>comments - for description</li>
+<li>alt - alternate text (to display if the image is not loaded properly) - supposedly to be short sentence</li>
+<li> img src="../c1/media/smiley-happy.jpeg" alt="SMILE" title="Smile" </li>
+<li>title = tooltips</li>
+<li>html - to display the content (like word doc)</li>
+<li>css - to make up/design the website</li>
+<li>&nsfp - whitespace when using special characters
+    (above - html validator)
+</li>
+
+<hr>
+<em>Date: 14 February 2023</em>
+<p>
+    use div to set the container
+    <br>
+    semantic web (old-way) only support on html file
+    <br>
+    -use less div
+    <br>
+    - header: logo, some information text (at the top)
+    <br>
+    -aside: advertising
+    <br>
+    - section : the page content
+    <br>
+    - article : can have more paragraph
+    <br>
+    - aside: right/left side
+    <br>
+    - footer: copyright info (below)
+    <br>
+    - ol order list
+    <br>
+    - li by default: 1. 2. 3.
+    <br>
+    - ul - bullet points (add style using circle, page: 10)
+    <br> 
+    - put type=a, it starts from a, b, c...
+    <br>
+    - dl = definition list
+    <br>
+    - dd = definition description (tab instead of space)
+    <br>
+    - dt = definition title
+</p>
+
+<h3>Folder Location</h3>
+<table>
+    <tr>
+        <th>Absolute Path (Origin Location)</th>
+        <th>Relative Path (where's the present location)</th>
+    </tr>
+    <tr>
+        <td>
+            <p>
+                - unique location to a file or a folder in a file system
+                <br>
+                - Absolution Path specifies the location of a file/directory from the root directory eg (C:\Xampp)
+                <br>
+                - error 404 not found if the path is not found
+                <br>
+                - root directory (starts with / at link)
+                <br>                
+                - /home/page/html/abc.html
+                <br>
+                home - root,
+                <br>
+                page, html - folder name
+                <br>
+                abc.html - nested folder
+            </p>
+        </td>
+        <td>
+            <p>
+                - current directory using (.)
+                <br>
+                - A single (.) represents the current directory
+                <br>
+                - Two dots (..) represents the parents
+                <br>
+            </p>
+        </td>
+    </tr>
+</table>
+
+<hr>
+<em>Date: 15 February 2023</em>
+
+<hr>
+<em>Date: 16 February 2023</em>
+</body>
+</html>
