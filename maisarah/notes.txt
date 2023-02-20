@@ -1,0 +1,202 @@
+<h1>Web-App</h1>
+
+<!-- "<" = open-tag, /> = close-tag
+1) The content would be inside of the tag
+Verbose Document Structure
+1) The browser is not strict (still can display content) - cons: need to format doc properly
+2) not much info can be taken in html (browser)
+3) Always starting w DOCTYPE HTML- document type HTML - must appear at the top
+4) Manifest function: application cache - Load faster than the 1st time (browser know)
+5) html has opening & closing tag
+6) title of the page (display to the web/browser)
+7) body - body content
+8) always starting with html
+9) meta tag - information to give *not necessary - additional keyword of the page - use to adapt 
+10) viewport - are we provide sufficient info?
+11) keyword - search changing (google, yahoo - user search for a keyword - the more the precise of the result page)
+12) concern about the content viewed by user/clients
+13) provide standard doc to avoid any errors
+14) h1 to h6
+
+
+Classic tag - display the older browser (not recognize semantic tag) eg: <i></i> / <b></b>
+Semantic tag - *updated browsder - rendering the content - can predict wht does text mean
+
+div - to section the contents - content (web - navigation, header, footer etc) - format the container
+span - subsction content inline
+<br> - it doesn't have closing (optional </br>)
+
+Special Char
+
+ -->
+
+<p>Jangan lupakan server</p>
+<p>Maisarah</p>
+
+<i style="color: #837572;">Twinkle Twinkle Little Star</i>
+
+header mesti dlm html
+
+
+09 Feb 2023
+
+External hyperlink:
+
+a tag - anchor - bring to another page
+<a href="https:/blabla.com">edX Website </a>
+href = link (target source to go)
+
+Internal hyperlink:
+<a href="#coolElement">edX Website </a>
+
+If it clicks, it would go to that section. It will give in 'id' on the same page.
+
+<div class="coolElement"
+    content
+</div>
+
+Hyperlink Targets:
+    target is an attribute.
+    target = when hyperlink clicks, it would go to the another page (new window).
+    as for : <base target="_blank"> all the links inside of the page will pop-out to the new window.
+
+
+Text link:
+<a href ="#">Click me</a>
+# = pages inside of the app
+
+a tag- can be used for text or image
+
+image would be placed inside of anchor tag.
+
+Feature Download
+- set value of true or false
+
+id must be unique (cannot be repeated on the same page)
+
+Link to an email address
+
+mailto:example@gmail.com?subject=Hi
+
+? = format
+
+Style Hyperlink - change the colour, etc
+4 states/conditions
+
+a:link - normal link (any colour)
+a:visited - link has been visited (link turns purple colour (already clicked))
+a:hover - as the user moves the cursor towards link
+a:active - when click the link, hold it and start to load. (after mouse release)
+
+comments - for description
+alt - alternate text (to display if the image is not loaded properly) - supposedly to be short sentence
+
+<img src="../c1/media/smiley-happy.jpeg" alt="SMILE" title="Smile">
+title = tooltips
+
+html - to display the content (like word doc)
+css - to make up/design the website
+
+&nsfp - whitespace when using special characters
+(above - html validator)
+
+14 February 2023 (Tuesday)
+use div to set the container
+semantic web (old-way) only support on html file
+-use less div
+- header: logo, some information text (at the top)
+-aside: advertising
+- section : the page content
+- article : can have more paragraph
+- aside: right/left side
+- footer: copyright info (below)
+- ol order list
+- li by default: 1. 2. 3.
+- ul - bullet points (add style using circle, page: 10) 
+- put type=a, it starts from a, b, c...
+- dl = definition list
+- dd = definition description (tab instead of space)
+- dt = definition title
+
+Folder location
+Absolute Path: origin location
+- unique location to a file or a folder in a file system
+- Absolution Path specifies the location of a file/directory from the root directory eg (C:\Xampp)
+- error 404 not found if the path is not found
+- root directory (starts with / at link)
+- /home/page/html/abc.html
+home - root,
+page, html - folder name
+abc.html - nested folder
+
+Relative Path: where's the present location
+
+A relative path relates to the present working
+- current directory using (.)
+- A single (.) represents the current directory
+- Two dots (..) represents the parents
+
+15 Feb 2023
+Image:
+float right: image will float at right
+
+responsive web 
+<picture> 
+optional by stating source = min-width
+</picture>
+
+media: targetted devices
+
+Basic Table
+expand the col and row
+ first row always be table header
+ table body = content
+ tfoot 
+
+ caption normally at the top of the table
+
+ 16 Feb 2023
+ method POST and GET (Form)
+ sensitive info should be encrypted
+
+ button 
+ submit - method POST (getting the form and submit)- Validation Form
+ function of js - to validate form (encode it and submit to...)
+ validation: carry at the server side
+ disabled - cannot use lah
+ submit button should be put inside of the form.
+ action = bla bla, bla bla = server script
+ enctype = encoding type would transmit to mana mana (server)
+
+ radio button - only one option
+ checkbox - multiple choice
+
+INPUT
+ placeholder - will display in grey
+ required - mandatory
+ email - cannot submit until insert in a proper email/format (validate)
+ The message is the standard one (takleh ubah, kalau nk ubah pakai JS)
+ name="" -> parameter name
+
+ the server script get one by one... and process the data
+ no name = difficult to extract the data
+ id = use javascript
+ --not compulsory 
+
+ HTML video, Audio
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

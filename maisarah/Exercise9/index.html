@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9</title>
+    
+    <style>
+        body {
+          text-align: center;
+        }
+        form {
+          display: inline-block;
+        }
+        table tr td {
+          height: 30px;
+        }
+        table > caption {
+          font-size: 25pt;
+        }
+        tfoot {
+          text-align: right;
+        }
+        input {
+          height: 20px;
+        }
+      </style>
+</head>
+<body>
+
+    <h1>Exercise 9</h1>
+
+    <h3>CSLAU Apparel Industries</h3>
+    <form action="page1." method="POST">
+        <p>Please fill in the form below.</p>
+        
+        <p>
+            <label for="company">Company Name: </label> 
+            <input type="text" name="company" placeholder="APU Sdn Bhd" required>
+            <!-- <textarea name="" id="" cols="17" rows="10">TEST</textarea> -->
+        </p>
+        
+        <p>
+            <label for="phone">Phone Number: </label>
+            <input type="text" name="phone" placeholder="+60123456789" required>
+        </p>
+
+        <p>
+            <label for="email">Email Address: </label>
+            <input type="text" name="email" placeholder="abc@gmail.com" required>
+        </p>
+
+        <p>
+            <label for="fullname">Full Name: </label>
+            <input type="text" name="fullname" placeholder="APU" required>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+    
+
+    <form action="/login">
+        <h4>Login</h4>
+        <p>
+            <label for="username">Username: </label>
+            <input type="text">
+        </p>
+
+        <p>
+            <label for="">Password: </label>
+            <input type="text">
+        </p>
+
+        <p>
+            <label for="">Confirm Password: </label>
+            <input type="text">
+        </p>
+        <p>
+            <button type="submit">Login</button>
+        </p>
+    </form>
+
+    <hr>
+
+    <!-- Answer Sheet -->
+    <h1>Answer Sheet</h1>
+    <form action="" method="POST">
+        <option>
+            Registration Form
+        </option>
+        <table>
+            <tr>
+                <td>Company Name:</td>
+                <td><input type="text" name="company" placeholder="Company Name" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="text" name="phone_number" placeholder="Phone Number" required></td>
+            </tr>
+            <tr>
+                <td>Email Address:</td>
+                <td><input type="text" name="email" placeholder="Email Address" required></td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </tfoot>
+        </table> 
+    </form>
+    
+</body>
+</html>

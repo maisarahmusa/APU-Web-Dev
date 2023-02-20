@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 | Basic Table</title>
+
+    <style>
+        table{
+            width: 100%;
+        }
+        
+        table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        thead{
+            text-align: center;
+            font-weight: bold;
+        }
+        tfoot{
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        th, td{
+            /* padding = spacing */
+            padding: 15px; 
+        }
+    
+    </style>
+</head>
+<body>
+
+    <!-- html allows a simple table formatting -->
+    <!-- <table border="1" width="100%;">  --> <!--old-fashioned -->
+    <table>
+
+        <h1 style="text-align: center; color: brown;">Exercise 8</h1>
+        <thead>
+            <tr>
+                <th colspan="5">APPAREL SALES REPORT</th>
+            </tr>
+            <tr>
+                <th>COMPANY</th>
+                <th>UNIFORM</th>
+                <th>T-SHIRT</th>
+                <th>PANT</th>
+                <th>VEST</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AVEX.CO</td>
+                <td>2500</td>
+                <td>3000</td>
+                <td>0</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>AVEX.CO</td>
+                <td>2500</td>
+                <td>3000</td>
+                <td>0</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>AVEX.CO</td>
+                <td>2500</td>
+                <td>3000</td>
+                <td>0</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

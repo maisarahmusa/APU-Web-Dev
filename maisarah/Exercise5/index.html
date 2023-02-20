@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Exercise 5</title>
+
+    <!-- CSS Code -->
+    <style>
+
+            *{
+
+        }
+
+        div.container{
+            width: 100%;
+        }
+
+        /* For semantic tag */
+        header, footer{
+            /*padding: 1em;*/
+            color: white;
+            background-color: lightcoral;
+            clear:left;
+            text-align: center;
+            width: 100%;
+            height: 60px;
+        }
+
+        nav{
+            float:left;
+            width: 100%;
+            padding: 1em;
+            text-align: center;
+        }
+
+        /* a is nested */
+        nav a{
+            text-decoration: none;
+            padding-left: 10px;
+        }
+
+        section{
+            float: left;
+            padding: 1em;
+            border: 1px solid gray;
+            width: 80%;
+        }
+
+        aside{
+            /*margin-left: 170px;*/
+            border: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+            /*width:20%;*/
+            /*float: right;*/
+        }
+
+    </style>
+    <!-- CSS Code -->
+</head>
+<body>
+    <!-- container as a wrapper -->
+    <div class="container">
+        <header><b>CSLAU APPAREL INDUSTRIES</b></header>
+        <nav>
+            <!-- a is nested -->
+            <!-- use a relative path for locating.html -->
+            <a href="../home.html">Home</a>
+
+            <a href="home.html">Home</a>
+
+            <!-- use an absolute path (use it carefully) -->
+            <a href="/Exercise5/solution/ex5/aboutus.html">About us 1</a>
+            <a href="/maisarah/Exercise5/solution/ex5/aboutus.html">About Us</a>
+            <a href="aboutus.html">About us</a>
+            <a href="products.html">Products</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <!-- <section>This is a section part</section> -->
+        <section>
+            <header>List of my favourite foods</header>
+            <div>
+                <ol>
+                    <li>Ikan</li>
+                    <li>Ayam</li>
+                    <li>Sayur</li>
+                </ol>
+            </div>
+            <div>
+                <header>Largest Cities in the World</header>
+                <ul>
+                    <li>Mungkin Kampung Pisang</li>
+                    <li>Mungkin negeri saya</li>
+                    <li>Planet Jupiter</li>
+                </ul>
+            </div>
+
+            <div>
+                <header>Definition List</header>
+                <dl>
+                    <dt>
+                        PHP
+                        <dd>(a server scripting language)</dd>
+                    </dt>
+                    <dt>
+                        Javascript
+                        <dd>(a client scripting language)</dd>
+                    </dt>
+                </dl>
+            </div>
+        </section>
+    
+        <aside>
+            <p>Aside</p>
+        </aside>
+    
+        <footer>
+            <p>Copyright © CSLAU Apparel Industries</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
+
+

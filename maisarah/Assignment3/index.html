@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+<body>
+    <h1>Question 1</h1>
+    <h2>A Simple Form</h2>
+    <em>Form Fundamental</em>
+
+    <form action="" method="POST">
+        <h3>Customer Info</h3>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" placeholder="Enter your name" autofocus required></td>
+            </tr>
+            <tr>
+                <td>Telephone:</td>
+                <td><input type="text" name="telephone" placeholder="Pattern:1-234-567-8910" required></td>
+            </tr>
+            <tr>
+                <td>Email address:</td>
+                <td><input type="text" name="email" placeholder="Enter your email address" multiple required></td>
+            </tr>
+        </table>
+
+        <h3>Books</h3>
+        <table>
+            <tr>
+                <td>
+                    <select name="" id="">
+                        <option value="">HTML5 Canvas by Steve Fulton & Jeff Fulton</option>
+                        <option value="">JavaScript: The Definitive Guide by David Flanagan</option>
+                        <option value="">HTML5 Geolocation by Anthony T.Holdener III</option>
+                        <option value="">Supercharged JavaScript Graphics by Raffaele Cecco</option>
+                        <option value="">HTML5: Up and Running by Mark Pilgrim</option>
+                        
+                    </select>
+
+                    Quantity (Maximum): <input type="number" min="1" max="5">
+                </td>
+            </tr>
+            <tfoot>
+                <td><button type="submit">Submit</button></td>
+            </tfoot>
+        </table> 
+    </form>
+
+    <hr>
+
+    <h1>Question 2</h1>
+    <h2><b>Leave a Reply</b></h2>
+    <form action="" method="POST">
+        <p>Your email address will not be published. Required fields are marked <span style="color: red
+            ;">&#42;</span> 
+            </p>
+        
+            <p> 
+                <label for="">Comment</label> <br>
+                <textarea name="comment" id="" cols="50" rows="10"></textarea>
+            </p>
+            <p> <label for="">Name<span style="color: red
+                ;">&#42;</span> </label> <br>
+                <textarea name="name" id="" cols="50" required></textarea>
+            </p>
+            <p> <label for="">Email<span style="color: red
+                ;">&#42;</span> </label> <br>
+                <textarea name="" id="" cols="50" required></textarea>
+            </p>
+            <p> <label for="">Website</label> <br>
+                <textarea name="" id="" cols="50" ></textarea>
+            </p>
+            <p>
+                <button type="submit">Post Comment</button>
+            </p>
+    </form>
+    
+
+
+    
+</body>
+</html>
