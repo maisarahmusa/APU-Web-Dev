@@ -185,6 +185,124 @@ INPUT
 
  HTML video, Audio
  
+ 21/2
+
+ internal style
+ -edit in head
+
+ CSS Syntax Style
+ 1) Selectors -
+ eg: html elements
+ table, th, td {
+
+ }
+ 2) Declaration (rule)
+ - consists of property & values
+ - always end with semicolon
+
+ right-side: property
+ left-side: value
+
+ padding - can't use equal / =
+
+ inline style
+
+ h1 - html style
+ rule - put semicolon
+
+
+ Embedded style:
+ use if 1 single page
+ -used in style elements and inside of <head>
+
+ External:
+ - Naming of docs: 123.css (Extension file)
+ - No <style>
+ - just pure CSS
+
+ Multiple Style Rules
+ - recommend to use combination
+ - inline & internal style
+
+ if use 
+ 1) css style inside of <style> internal style use for tht page
+
+ and
+
+ 2) <h1 style="llala">Heading1</h1> - inline style (very unique)
+
+ it will take the unique one (which is 2nd one)
+
+ cth nk tukar background: jgn guna inline style, better guna internal style
+
+ kalau guna juga, kena tukar setiap style dalam inline style
+
+ -inline style - last choice (if has special case, then use it.)
+ -better to use internal or external style
+
+
+ Rule sets 
+ two rules:
+ class - a group of elements
+ # - for id - find a single item..
+ starts with opening curly brackets
+
+ div>ul>li*6 (shortcut)
+
+ font type {font1, font2, font3}
+
+ 1st font: install in machine (the browser looks for this first)
+ 2nd font:
+ 3rd font:
+
+if first option is not in the machine, it will read the second option of font and so on
+
+kalau letak external style dgn inline style: page akan baca inline style (unique) - multiple style
+ 
+ code akan baca..
+ if
+ 1) inline
+if else
+ 2) internal
+ else
+ 3) External
+
+
+ID & Class
+
+select multiple elements - use comma to seperate them
++ symbol must be immediate
+
+header > nav: nested
+
+<header>
+    <nav>..</nav>
+<header>
+
+draggable attr = true 
+
+if style
+header[draggable=true]{
+    blabla
+}
+
+if draggable= true, then the style would applied to that code mehh..
+
+<header draggable="true">
+    Target
+</header>
+
+if h2+p{}, it will change all the h2 and p lah
+kalau nak selected heading dgn paragraphs shj = guna id
+
+
+
+
+
+
+
+
+
 
 
 

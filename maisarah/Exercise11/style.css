@@ -1,0 +1,66 @@
+/* Exercise 11 */
+body {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h1, h2 {
+    background-color: yellow;
+    color: darkblue;
+    width: fit-content;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: greenyellow;
+    /* indented = padding */
+    padding-right: 30px;
+    /* margin-right: 30px; */
+    /* padding: auto; */
+}
+
+header+h1 {
+    margin: 20px;
+}
+
+header[draggable=true] {
+    margin: 20px;
+    background-color: cadetblue;
+}
+
+/* Answer for Ex12 */
+h2+p{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: greenyellow;
+    /* indented = padding */
+    padding-right: 30px;
+    /* margin-right: 30px; */   
+}
+
+/* use id if want to change demanded heading (unique) -cannot use the same id */
+#h2 {
+    background-color: aquamarine;
+}
+
+/* if wants to combine style for h1+p and h3+p, then use CLASS */
+
+.combine {
+    background-color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
+    border: outset 3px;
+    border-radius: 6px;
+    border-color: cadetblue;
+    width: fit-content;
+}
+
+p[id=p2]{
+    color: red;
+}
+/* p = paragrah
+id = id
+p2 = value 
+selected with their attribute*/
+
+
+
