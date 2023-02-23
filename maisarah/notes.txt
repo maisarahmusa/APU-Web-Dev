@@ -295,6 +295,52 @@ if draggable= true, then the style would applied to that code mehh..
 if h2+p{}, it will change all the h2 and p lah
 kalau nak selected heading dgn paragraphs shj = guna id
 
+22/2/2023
+CSS Box Model
+- All html elements are boxes
+- contoh P tag
+- p is a box, then the content is inside of p tag
+- outside of the content is a border
+- outer one is a margin
+- identify the property to style the box
+- image is also a tag
+- if tak set width, automatik page auto-fit bagi 100%
+
+Border style
+border-width property
+p.b{
+
+}
+.b = class because of dot.
+
+border-radius jdi melengkung dkt bucu
+
+asterisk - to show all elements (semua kotak)
+css margins
+properties:
+clockwise - border n padding
+top, right, bottom, left
+
+padding tu saiz border dgn huruf
+
+
+Nesting elements
+> symbol: immediate child
+
+text color
+3 types:
+text-indent: space for paragraph
+line-height - for double spa
+
+
+whitespace - wrapped content (normal)
+nowrap - no content wrapped
+ellipsis - content jadi ...
+
+
+
+
+
 
 
 
