@@ -337,6 +337,98 @@ whitespace - wrapped content (normal)
 nowrap - no content wrapped
 ellipsis - content jadi ...
 
+23/2/2023
+Group and Nesting:
+
+<main>
+<p>
+...1st element of main
+</p>
+
+<p>
+...2nd element of main (p element with child)
+<a href =""> - anchor tag = child
+</p>
+
+<p>
+...3rd element of main
+</p>
+</main>
+
+nested can be layer by layer
+
+main >a{
+    means select all anchor
+}
+
+p >a {
+    a is a children of p
+}
+
+indented spaces (normally a Nesting)
+<div>
+    <article>...1</article>
+    <article>...2</article>
+    <div>
+        <article>...3</article>
+    </div>
+    <article>...4</article>
+</div>
+
+use space:
+#linear-container article{
+ to apply all articles in nesting element
+}
+
+Property:
+1) Font Family
+-suggested: normal fonts
+responsive font-size
+-vw = view width (according adjusted using the devices - screensize)
+-font-variant: normal size
+
+Own font- download own font
+@font-face {
+    src:url - the source of the download
+}
+
+article{
+
+}
+
+Dimension
+adjust the size of the elements
+height - based on content
+
+Position
+1) Logo (image tag)
+eg: position: float; (property)
+final location
+
+eg: advertising while scrolling up and down
+
+Relative:
+-
+
+Absolute:
+- based on the position of their ancestor element
+
+Fixed:
+
+
+Overlapping:
+layer by layer
+if index is larger, then it will be at the top (max value:999, eg: GIF)
+............smaller,.......................lowest.
+
+
+z-index
+-ve backlayer
++ve frontlayer
+
+
+
+
 
 
 

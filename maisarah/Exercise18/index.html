@@ -7,10 +7,46 @@
     <title>Exercise 18</title>
 
     <style>
+        @font-face {
+            font-family: "Goodnight-London-Script";
+            src: url('../c1/media/Goodnight-London-Script.ttf');
+            /* font-family: "ELEGANT-TYPEWRITER-Bold";
+            src: url('../c1/media/ELEGANT-TYPEWRITER-Bold.ttf'); */
+        }
+
+        @font-face {
+            font-family: "ELEGANT-TYPEWRITER-Bold";
+            src: url('../c1/media/ELEGANT-TYPEWRITER-Bold.ttf');
+        }
+
+        @font-face {
+            font-family: "Photograph-Signature";
+            src: url('../c1/media/Photograph-Signature.ttf');
+        }
+
+        @font-face {
+            font-family: "123";
+            src: url("../c1/media/Immortal-Paradise.otf");
+        }
+
         body{
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-            font-size: 12px;
+            /* font-family: Verdana, Arial, Helvetica, sans-serif; */
+            font-family: "Photograph-Signature";
+            font-size: 35px;
             background-color: #ccffff;
+        }
+
+        p {
+            font-family: "ELEGANT-TYPEWRITER-Bold";
+            font-size: 20px;
+        }
+        
+        P::first-letter {
+            font-size: 50px;
+        }
+
+        footer {
+            font-family: "123";
         }
 
         .letter {
@@ -42,27 +78,29 @@
 
     <div id="budgetsummary">
         <p>
-            <span class="letter">T</span>his is the budget summary for ABC, Inc. In the Year 2005, we had an income of
+            This is the budget summary for ABC, Inc. In the Year 2005, we had an income of
         <span class="income">$74,935</span>. We had expenses of
         <span class="expenses">$41,167</span>. This allowed us to have a profit of
         <span class="profit">$33,768</span>.
         </p>
         <p>
-            <span class="letter">I</span>n 2000, we had an income of <span class="income">$50,123</span> and expenses of <span class="expenses">$30,796</span>. This allowed us to have a profit of
+            In 2000, we had an income of <span class="income">$50,123</span> and expenses of <span class="expenses">$30,796</span>. This allowed us to have a profit of
         <span class="profit">$19,327</span>.
         </p>
         <p>
-            <span class="letter">I</span>n 1995, we had an income of <span class="income">$35,182</span> and expenses of <span class="expenses">$29,772</span>, for a total profit of
+            In 1995, we had an income of <span class="income">$35,182</span> and expenses of <span class="expenses">$29,772</span>, for a total profit of
         <span class="profit">$5,410</span>.
         </p>
         <p>
-            <span class="letter">I</span>n 1990, we had an income of <span class="income">$20,031</span> and expenses of <span class="expenses">$19,271</span>, for a total profit of
+            In 1990, we had an income of <span class="income">$20,031</span> and expenses of <span class="expenses">$19,271</span>, for a total profit of
         <span class="profit">$760</span>.
         </p>
         <p>
-            <span class="letter">A</span>s you can see, we are constantly growing. As we move further into the 21st
+            As you can see, we are constantly growing. As we move further into the 21st
         century, at ABC, Inc. we think the future is bright!</p>
     </div>
+
+    <footer>Maisarah Musa</footer>
     
 </body>
 </html>

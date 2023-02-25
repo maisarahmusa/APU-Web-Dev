@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 19 | CSS</title>
+    <style>
+        .parent {
+            background-color: rgb(148, 185, 184);
+            border: 5px solid rgb(9, 54, 112);
+            /* 100px for margin-top and the rest auto */
+            margin: 100px auto;
+            width: 50%;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            /* margin: 20px; */
+            /* background-color: burlywood; */
+        }
+        .one {
+            border: 3px dashed rgba(213, 121, 121, 0.825);
+            background: linear-gradient(90deg, rgb(92, 88, 166) 0%, rgb(119, 117, 226) 41%, rgb(96, 125, 244) 80%, rgb(134, 189, 238) 100%);
+            position: relative;
+            /* left: 0px; */
+        }
+
+        .two {
+            border: 3px dashed burlywood;
+            /* background-color: rgba(213, 121, 121, 0.825); */
+            background: linear-gradient(90deg, rgb(134, 189, 238) 0%, rgb(96, 125, 244) 41%, rgb(119, 117, 226) 80%, rgb(92, 88, 166) 100%);
+            position: relative;
+            /* bottom: 100px; */
+            left: 606px;
+            /* right: auto; */
+            /* margin-left: 620; */
+        }
+    </style>
+  </head>
+  <body>
+
+    <h1>Exercise 19</h1>
+    <div class="parent">
+      <div class="child one">One</div>
+      <div class="child two">Two</div>
+    </div>
+  </body>
+</html>

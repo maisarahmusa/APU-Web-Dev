@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Descendant Combinators | CSS</title>
+    <style>
+
+      /* anchors that are descendants of main */
+      main a{
+        text-decoration: overline;
+      }
+
+      /* anchors that are children of main */
+      main > a{
+        /* no effect becos anchors are not children of main */
+        font-size: 200px; 
+      }
+
+      /* anchors that are children of p */
+      p > a{
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Descendant Selectors</h1>
+    </header>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        maxime fuga sunt odit sint tenetur neque autem tempora praesentium
+        dolorum sapiente nisi <a href="#">minus vitae</a> hic, doloremque unde quibusdam
+        mollitia amet.
+      </p>
+      <p>
+        Vel nulla optio commodi corrupti pariatur eos. Deserunt, quaerat.
+        Laboriosam laudantium voluptatibus soluta optio saepe reprehenderit
+        aspernatur incidunt ab! Dolorem corporis quo hic impedit nam similique.
+        <a href="#">Aut velit iure nisi?</a>
+      </p>
+      <p>
+        Placeat rem, minima nisi <a href="#">voluptatibus, nobis suscipit quae dolor <mark>
+        veritatis quisquam</mark>, debitis ratione voluptatum.</a> Suscipit, vel! Minima
+        dolorem expedita nesciunt deserunt, placeat pariatur illo voluptatem,
+        magnam debitis natus quisquam?
+      </p>
+    </main>
+  </body>
+</html>
+
