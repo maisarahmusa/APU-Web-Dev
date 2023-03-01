@@ -426,6 +426,25 @@ z-index
 -ve backlayer
 +ve frontlayer
 
+28 Feb 2023
+
+Module 3 - Part 2:
+
+Image Property:
+
+Image's opacity/transparency:
+def val: 0.0 to 1.0
+
+Transparent Hover Effect:
+if mouse goes to the photo, it will change the opacity..
+
+indent: use padding
+gap: use margin 
+
+Floating image:
+
+
+
 
 
 
