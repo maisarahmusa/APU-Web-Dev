@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 10px;
+            margin: 10px auto;
+        }
+        body {
+            border: 2px solid;
+        }
+        .wrapper {
+            display: table;
+            width: 100%;
+            border: 2px solid red;
+            box-sizing: border-box;
+        }
+        .header .footer {
+            display: table-row;
+            height: 1px;
+            border: 2px solid blue;
+            box-sizing: border-box;
+        }
+        /* Table as well */
+        .main {
+            display: table-cell;
+            border: 2px solid yellow;
+            box-sizing: border-box;
+        }
+        .box {
+            display: table-cell;
+            border: 2px solid yellow;
+            box-sizing: border-box;
+        }
+        .sidebar {
+            width: 100px;
+        }
+        @media (max-width: 420px) {
+          .box{
+               display: block;
+               width: 100%;
+          }
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">HEADER</div>
+        <div class="main">
+            <div class="box sidebar">Left-sidebar</div>
+            <div class="box content">Main content (p>Lorem)*10</div>
+            <div class="box sidebar">Right-sidebar</div>
+        </div>
+        <div class="footer">FOOTER</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* @font-face {
+    font-family: 'font1';
+    src: url('../../c1/media/ELEGANT-TYPEWRITER-Light.ttf');
+} */
+/* * {
+    padding: 2px;
+    margin: 10px auto;
+} */
+
+body {
+    border: 1px solid lightslategrey;
+    box-sizing: border-box;
+    padding: 10px;
+}
+header {
+    border: 1px solid teal;
+    box-sizing: border-box;
+}
+
+#logo {
+    background-image: url('../../c1/media/html5.png');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 55px;
+    /* float: left; */
+    display: inline-block;
+}
+
+#thumbnails {
+    /* display: inline-block; */
+    float: right;
+    border: 1px solid salmon;
+    padding-left: 50px;
+
+}
+
+#searchbar input {
+    float: right;
+    border: 1px solid rgb(255, 0, 102);
+    /* margin: auto; */
+    /* display: inline-block; */
+}
+#link {
+    border: 1px solid blue;
+    text-align: center;
+    /* font-family: 'font1'; */
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+section {
+    display: table;
+    width: 100%;
+    border: 1px solid peru;
+}
+
+#banner {
+    /* display: table-cell; */
+    border: 2px solid yellow;
+    box-sizing: border-box;
+    /* display: inline-block; */
+}
+#left {
+    float: left;
+    /* border: 1px solid; */
+}
+#center {
+    float: none;
+}
+#right {
+    float: right;
+}
+
+footer {
+    text-align: center;
+}

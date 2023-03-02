@@ -444,6 +444,47 @@ gap: use margin
 Floating image:
 
 
+1 Mar 2023
+pseudo-element
+-specifies space 
+-eg: news update (small icon)
+cth space sebelum h1 for <h1>...</h1>
+
+Display Property
+-display the behaviour (box model)
+-child element
+some elements are independent
+
+none - disappear
+inline - 
+
+html table cannot fit the content
+but the column can 
+adjust based on screen resolution (responsive website)
+
+for table, if the screen becomes small, it will turn to scroll horizontally.
+~the beauty of css table~ kata pujangga instructor kim
+
+Visiblity property (early version property) - limitation
+visible = show
+hidden = hide (but still remain on the content, cannot change to another)
+-remaining content cannot take over the places 
+-can use z-index to overlap (mcm tampal lah mai)
+
+Media Queries
+1) when resize the window, the element will followed by the 
+specifies max-width
+2) as the browser detects the screensize, it will change the 
+bcground color (cth nota)
+- depends on the targetted devices (mobile/tab)
+- 
+
+
+
+
+
+
+
 
 
 
