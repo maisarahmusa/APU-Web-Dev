@@ -477,7 +477,83 @@ specifies max-width
 2) as the browser detects the screensize, it will change the 
 bcground color (cth nota)
 - depends on the targetted devices (mobile/tab)
-- 
+
+2 Mar 2023
+Javascript
+- to improve user's experience
+- work together with html n css
+- makes more flexible
+- hosted at server (advanced js = nodejs)
+- Internet Explorer changed into Microsoft Edge
+-
+
+2) server replied to the user
+3) when the server accepts request, the page contains html, css, js (external/internal) -loads the desired page
+4) the doc will be downloaded from server to the clients machine (client machine runs the content)
+5) php lang runs at the server
+
+Advantage of Javascript:
+- some of the task can be done locally
+- server will process
+- less load on a server (server is not busy)
+- provide instant request
+- if internet is not stable, resulting ..
+- browser is more interative
+
+3 ways to write JS (the code is different)
+1) Inline
+    - not recommended (difficult to find when maintenance)
+    - if it is a special case, then use it but not too many lah...
+2) Embedded
+    - using script tag <script>...</script>
+    - can include in both head and body section
+
+3) External
+    - try to practice by using embedded first to see either it functions or not.
+    - if it functions, then pass it to the external script.
+
+- extension.js (anynames.js)
+
+Data types
+1) number
+2) big int - can store in big numbers
+3) string - single quotation ("", '', boleh pakai)
+4) backtick `string` (it's not a single quote)
+5) ${...} = variable
+6) console log = will display the message of the variable by using backtick
+7) 
+
+Data type
+1) Boolean - 
+2) null value -
+3) undefined val -
+
+string
+- keep track of the words
+- concatenation (combination)
+- function of variable = to hold the value
+- can use 'let' or 'var' keyword
+
+
+innerscope
+
+
+naming variable
+- symbol
+- _
+- digits
+- letter
+
+FIRST CHARACTER IS NOT ALLOWED TO USE DIGIT
+
+windows.console.log() - windows Feature - 
+to confirm (confirm feature)
+window prompt - variable call name - pop-up boxes
+
+
+
+
+
 
 
 
