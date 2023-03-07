@@ -9,12 +9,63 @@
 <body>
     <h1>Exercise 30</h1>
 
-    <button onclick="window:prompt('')"></button>
+    <!-- <button onclick="window:prompt('Enter a value:')">Exercise 30</button> -->
 
+
+    <!-- <script>
+        let arrInt = [9, 7, 5, 3, 1];
+        console.log(arrInt);
+
+    </script> -->
 
     <script>
-        let arrInt = [9, 7, 5, 3, 1];
+        const N = 5;
+        let temp = prompt("Hello;");
+        // check data type
+        console.log("Type of temp: ", typeof temp);
 
+        // convert string to number
+        let x = parseInt(temp);
+        console.log("Type of x: ", typeof x); //number
+
+        let arrInt = [];
+        // Prompt 5 integers
+        // arrInt[0] = prompt("Enter number");
+        // arrInt[1] = prompt("Enter number");
+        // arrInt[2] = prompt("Enter number");
+        // arrInt[3] = prompt("Enter number");
+        // arrInt[4] = prompt("Enter number");
+
+        // using For
+        // let i = 0;
+        for(let i = 0; i<N; i++){
+            arrInt[i] = parseInt(prompt("Enter number:"));
+        }  
+
+
+        // convert to integer
+        arrInt[0] = parseInt(prompt("Enter number"));
+        arrInt[1] = parseInt(prompt("Enter number"));
+        arrInt[2] = parseInt(prompt("Enter number"));
+        arrInt[3] = parseInt(prompt("Enter number"));
+        arrInt[4] = parseInt(prompt("Enter number"));
+
+        console.log("Type of arrInt: ", typeof arrInt);
+
+        // Complete the sum of the elements
+        let sum = 0;
+        // sum = sum + arrInt[0]
+        for(index in arrInt) {
+            sum += arrInt[index];
+        }
+
+        sum += arrInt[0];
+        sum += arrInt[1];
+        sum += arrInt[2];
+        sum += arrInt[3];
+        sum += arrInt[4];
+
+        console.log("Sum = ", sum);
     </script>
     
 </body>

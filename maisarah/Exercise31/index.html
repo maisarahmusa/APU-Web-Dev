@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 31</title>
+</head>
+<body>
+    <h1>Exercise 31</h1>
+
+    <!-- <script>
+        // let marks = parseInt(prompt("Enter number: "));
+
+        const R = 5;
+        let sum_of_marks = [];
+
+        for(let marks = 0; marks < R; marks++){
+            sum_of_marks[marks] += parseInt(prompt("Enter number: "));
+        }
+
+        // let marks = 0;
+        // for(index in sum_of_marks) {
+        //     marks += sum_of_marks[index];
+        // }
+
+        // console.log("Sum =", marks);
+
+        // sum_of_marks[0] = parseInt(prompt("Enter number"));
+        // sum_of_marks[1] = parseInt(prompt("Enter number"));
+        // sum_of_marks[2] = parseInt(prompt("Enter number"));
+        // sum_of_marks[3] = parseInt(prompt("Enter number"));
+        // sum_of_marks[4] = parseInt(prompt("Enter number"));
+
+        console.log("Total of marks = ", sum_of_marks);
+    </script> -->
+
+    <!-- Answer -->
+    <script>
+        var count = 0;
+        var sum = 0;
+        var abc;
+        do{
+            count++;
+            abc = prompt("Enter marks", "0");
+
+            // Cancel returns null value
+            if(abc != null)
+                sum += parseInt(abc);
+        } 
+        while (abc != null);
+
+        alert("Average marks = " + sum / count);
+
+    </script>
+    
+</body>
+</html>

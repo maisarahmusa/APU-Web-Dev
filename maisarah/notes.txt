@@ -551,6 +551,54 @@ to confirm (confirm feature)
 window prompt - variable call name - pop-up boxes
 
 
+Javascript
+7 MARCH 2023
+constant - data: value cannot be changed/reassigned
+array - to store multiple data values
+operator - 
+control structure:
+1: Looping Control
+
+ex.30:
+issue from prompt
+check datatype
+console.log(typeof temp)
+
+Working with number
+
+Conditional control
+if-else statement
+switch case
+
+Break statement: control the statement
+Continue statement: always in a Looping
+Switch: the value of expression will match to the case.
+if the case does not match, it will go to the default.
+
+case..break. if the case is matched, then it would stop from finding
+the case. break the control
+
+loop = repeat the same action again n again
+for loop
+length is length of the elements
+i++ = i+1
+
+let = initialization
+
+do while loop
+then condition will ask to continue or not
+
+for in loop
+
+function
+function abc()
+inside of bracker - define a parameter (if any)
+callbacks
+
+
+
+
+
 
 
 
