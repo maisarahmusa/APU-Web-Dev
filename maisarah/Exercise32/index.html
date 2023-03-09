@@ -9,7 +9,7 @@
 <body>
 
     <script>
-        // name function
+        // normal name function
         function log( str )
         {
             console.log( str );
@@ -17,15 +17,18 @@
 
 
         // Function accepts input argument 1) by-value, 2) callback
+        // performTask is a function and accept function
         function performTask( input, logFunc)
         {
             logFunc(input);
         }
 
         // input argument: string and callback function
+        // log is a value and function
         performTask("test callback function", log);
 
         // passing anonymous callback functions
+        // function w/o names, tht's why it's called as anonymous
         performTask("test anonymous callback", function(str){
             alert(str);
         });

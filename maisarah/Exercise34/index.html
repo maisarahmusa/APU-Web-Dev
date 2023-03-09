@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 34</title>
+</head>
+<body>
+
+    <h1>Exercise 34</h1>
+
+    <div id="container">
+        <button>Click Me!</button>
+    </div>
+    <pre id="output"></pre>
+
+    <!-- <script>
+        let btn = document.querySelector("output");
+
+        function Click(event){
+            alert("hi");
+        }
+
+        btn.onclick = Click;
+    </script> -->
+
+
+<!-- Answer -->
+    <script>
+        const pre = document.querySelector("#output");
+        function clickMe(event){
+            pre.textContent += `You have clicked on a ${event.currentTarget.tagName} element.\n`;
+        }
+
+        const container = document.querySelector("#container");
+        container.addEventListener('click', clickMe);
+
+        document.querySelector("button").addEventListener("clickMe", function(event){
+            pre.textContent = `You have clicked on a ${event.currentTarget.tagName} element.\n`;
+        });
+
+    </script>
+    
+</body>
+</html>

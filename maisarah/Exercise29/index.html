@@ -1,42 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 29</title>
-    <script src="../Exercise29/app.js"></script>
-</head>
-<body>
-    <h1>Exercise 29</h1>
-
-    <button onclick="window:alert('Hello World');">Alert</button>
-    <!-- apa beza -->
-    <button onclick="window:confirm('press a key');">Confirm 1</button>
-    <button onclick="javascript:taknampak()">Confirm 2</button>
-    <button onclick="taknampak()">Confirm 3</button>
-
-    <button onclick="window:prompt('Enter your name');">Prompt 1</button>
-    <button onclick="javascript:taknampak2();">Prompt 2</button>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 29 | JS</title>
+    <!-- link to js file -->
+    <script src="./app.js"></script>
+    <!-- /link to js file -->
+  </head>
+  <body>
+    <button onclick="javascript:window.alert('alert popup message box');">
+      Alert
+    </button>
+    <button onclick="javascirpt:confirmMessageBox()">Confirm</button>
+    <button onclick="javascript:promptMessageBox();">Prompt</button>
+  </body>
 </html>
-
-<!-- <script>
-    function taknampak(){
-        let tknmpak = window.confirm("Do you want to continue?");
-
-        if (tknmpak){
-            alert('OK');
-        }
-        else
-            alert('Cancel');
-    }
-</script>
-
-<script>
-    function taknampak2(){
-        let tknmpak2 = prompt("Enter your name");
-        alert(`How are you doing?, ${tknmpak2}`);
-    }
-</script> -->
+<script></script>

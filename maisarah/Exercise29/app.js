@@ -1,14 +1,10 @@
-function taknampak(){
-    let tknmpak = window.confirm("Do you want to continue?");
-
-    if (tknmpak){
-        alert('OK');
-    }
-    else
-        alert('Cancel');
+function confirmMessageBox() {
+    let opt = window.confirm("do you want to continue?");
+    if (opt) alert("OK");
+    else alert("Cancel");
 }
 
-function taknampak2(){
-    let tknmpak2 = prompt("Enter your name");
-    alert(`How are you doing?, ${tknmpak2}`);
+function promptMessageBox() {
+    let name = prompt("Enter your name");
+    alert(`How are you, ${name} ?`);
 }

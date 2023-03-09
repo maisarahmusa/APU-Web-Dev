@@ -561,11 +561,10 @@ control structure:
 
 ex.30:
 issue from prompt
-check datatype
+check datatype - typeof operator
 console.log(typeof temp)
 
 Working with number
-
 Conditional control
 if-else statement
 switch case
@@ -591,9 +590,62 @@ then condition will ask to continue or not
 for in loop
 
 function
+
 function abc()
 inside of bracker - define a parameter (if any)
-callbacks
+callbacks function
+anonymous function
+
+i/p parameter: to hold the parameter'
+
+8 MARCH 2023
+parseInt function - convert string to int (no)
+
+Function argument
+- accept one argument
+
+-i/p param = msg
+-i/p argument = hello world
+
+result return keyword
+
+return string with msg
+
+Part 2
+window = an object
+window navigator
+document is an object
+getElementid = HTML element/ html text 
+innertext = the content
+
+1. window object
+2. document object
+
+Window location
+
+window screen = to detect the screensize
+id must be unique = getElementid (tht's why tkde s)
+backtick `...` = string formatter
+
+window document
+.innerhtml = p1_text
+p1_text is a content
+
+links array: store inside array list
+getElementsByAnything = return the array
+document.querySelector() - select the element
+
+Handling Event
+button onclick = 
+
+event bubbling =
+div1 contains sub div2 container
+
+
+
+
+
+
 
 
 

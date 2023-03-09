@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../Exercise32_2/app.js"></script>
+    <title>Exercise 32 | JS</title>
+</head>
+<body>
+    <h1>Exercise 32</h1>
+
+    <script>
+        let yob = window.prompt("Enter your year of birth");
+
+        if (yob.length > 0) {
+            if (yob != null) {
+            let yourAge = getAge(yob);
+        
+            window.alert(yourAge);
+        }
+        }
+        else {
+            alert ("Oops, you did not enter your Year of Birth.");
+        }
+        window.console.log("Program ended!");
+        
+    </script>
+
+  
+    
+</body>
+</html>
