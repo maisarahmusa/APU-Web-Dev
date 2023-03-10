@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 35 | Area of Circle: throw</title>
+</head>
+<body>
+
+    <h3>Radius of Circle: </h3>
+    <!-- <button onclick="area(7);"> -->
+    <input type="number" id="buttonapaentah">
+    <!-- <button onclick="a(7);">Show Result: Area</button> -->
+    <button onclick="a();">Show Result: Area</button>
+
+    <p id="result"></p>
+
+    <script>
+        /* function as value */
+        const a = function () {
+
+        // saya buat salah mat
+        // var number = document.getElementById("number").value;
+
+        event.preventDefault();
+        // using Query Selector
+        var radius = Number(document.querySelector("#buttonapaentah").value);
+
+        /* user defined function */
+        // function area(radius) {
+        //   let area = (Math.PI * Math.pow(radius, 2)).toFixed(2);
+        //   document.getElementById("result").innerText = `Area: ${area}`;
+        //   // document.getElementById("result").innerHTML = `<h3>Area: ${area}</h3>`;
+        //   // document.getElementsByTagName("p")[0].innerText = `Area: ${area}`;
+        // }
+        // Check negative value
+        // using throw
+        try {
+            if(radius < 0)
+            throw "Negative value is not allowed!";
+
+            // 
+            let area = (Math.PI * Math.pow(radius, 2)).toFixed(2);
+            document.getElementById("result").innerText = `Area: ${area}`;
+
+        } catch (error) {
+            alert(error);
+            document.getElementById("result").innerText = "";
+        }
+        finally {
+            console.log("try or catch is completed");
+        }
+        
+        };
+      
+    
+      </script>
+    
+</body>
+</html>

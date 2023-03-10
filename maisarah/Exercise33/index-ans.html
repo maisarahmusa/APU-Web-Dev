@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Execise 33 | JS</title>
+  </head>
+  <body>
+    <h3>Radius of Circle: 7</h3>
+    <!-- <button onclick="area(7);"> -->
+    <button onclick="a(7);">Show Result: Area</button>
+    <p id="result"></p>
+  </body>
+</html>
+<script>
+  /* function as value */
+  const a = function (radius) {
+    let area = (Math.PI * Math.pow(radius, 2)).toFixed(2);
+    document.getElementById("result").innerText = `Area: ${area}`;
+  };
+
+  /* user defined function */
+  function area(radius) {
+    let area = (Math.PI * Math.pow(radius, 2)).toFixed(2);
+    document.getElementById("result").innerText = `Area: ${area}`;
+    // document.getElementById("result").innerHTML = `<h3>Area: ${area}</h3>`;
+    // document.getElementsByTagName("p")[0].innerText = `Area: ${area}`;
+  }
+</script>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+</head>
+<body>
+    <h1>Assignment 6</h1>
+
+    <!-- <p>Question 1:</p>
+
+    <script>
+        window.location.replace("https://google.com.my");
+    </script> -->
+<p>Question 2: Sum of the two given integers</p>
+
+<button onclick="sumOfInteger()">Sila Tekan</button>
+<p id="total"></p>
+<script>
+    function sumOfInteger(){
+        let number = parseInt(prompt("Enter a number:"));
+        let number2 = parseInt(prompt("Enter a number:"));
+
+        let total_num = number + number2;
+        if(total_num){
+            document.getElementById("total").innerHTML =
+            "Sum of integers = " + total_num;
+        }
+    }
+
+</script>
+
+<p>Question 3: To check either an integer is positive or negative</p>
+
+    <button onclick="checkInteger()">Sila Tekan</button>
+    <p id="check"></p>
+
+    <script>
+        function checkInteger(){
+            let number = parseInt(prompt("Enter a number:"));
+
+            if(number < 0){
+                // alert("It is a negative integer.");
+                document.getElementById("check").innerHTML =
+                number + "" + "is a negative integer";
+            } else {
+                // alert("It is a positive integer.");
+                document.getElementById("check").innerHTML =
+                number + "" + "is a positive integer";
+            }
+        }
+
+    </script>
+
+<p>Question 4: Adding a new string</p>
+
+<script>
+    function newString(){
+        let word = prompt("Enter a word:");
+
+        
+    }
+
+</script>
+
+<p>Question 5:</p>
+
+    <script>
+
+    </script>
+
+<p>Question 6:</p>
+
+<script>
+
+</script>
+
+<p>Question 7: To find the largest of 3 given integers</p>
+
+    <button onclick="largestInt()">Sila Tekan</button>
+    <p id="largeInt"></p>
+
+    <script>
+        function largestInt(){
+            let x = parseInt(prompt("Enter a number: "));
+            let y = parseInt(prompt("Enter a number: "));
+
+            if(x > y){
+                document.getElementById("largeInt").innerHTML =
+                x + " is greater than " + y; 
+            }
+            else if (x < y){
+                document.getElementById("largeInt").innerHTML =
+                x + " is lower than " + y; 
+            }else {
+                document.getElementById("largeInt").innerHTML =
+                x + " equals to " + y;  
+            }
+        }
+    </script>
+
+<p>Question 8: Marks</p>
+
+<button onclick="totalMark()">Sila Tekan</button>
+<p id="markah"></p>
+
+<script>
+    function totalMark(){
+        let mark = parseInt(prompt("Insert your mark: "));
+
+        if(mark <= 89 && mark < 100){
+            document.getElementById("markah").innerHTML =
+                mark + " Tahniah, A+!";
+        }
+        else if(mark < 89 && mark >= 80){
+            document.getElementById("markah").innerHTML =
+                mark + " Tahniah, A!";
+        }
+        else if(mark < 80 && mark >= 75){
+            document.getElementById("markah").innerHTML =
+                mark + " Tahniah, A-!";
+        }
+        else if(mark < 80 && mark >= 75){
+            document.getElementById("markah").innerHTML =
+                mark + " Sikit Lagi, B+!";
+        }
+        else if(mark < 80 && mark >= 75){
+            document.getElementById("markah").innerHTML =
+                mark + " Sikit Lagi, B!";
+        }
+        else if(mark < 80 && mark >= 75){
+            document.getElementById("markah").innerHTML =
+                mark + " Bolehlah, B-!";
+        }
+        else if(mark < 80 && mark >= 75){
+            document.getElementById("markah").innerHTML =
+                mark + " Memuaskan, C+!";
+        }
+        else if(mark < 80 && mark >= 75){
+            document.getElementById("markah").innerHTML =
+                mark + " Memuaskan, C-!";
+        }
+        else{
+            document.getElementById("markah").innerHTML =
+                mark + " Cuba lagi!";
+        }
+    }
+
+</script>
+
+<p>Question 9: Reverse a string</p>
+
+    <script>
+
+    </script>
+
+<p>Question 10: Find even digit</p>
+
+<script>
+
+</script>
+
+    
+    
+</body>
+</html>

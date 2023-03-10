@@ -1,22 +1,22 @@
 <h1>Web-App</h1>
 
 <!-- "<" = open-tag, /> = close-tag
-1) The content would be inside of the tag
+1- The content would be inside of the tag
 Verbose Document Structure
-1) The browser is not strict (still can display content) - cons: need to format doc properly
-2) not much info can be taken in html (browser)
-3) Always starting w DOCTYPE HTML- document type HTML - must appear at the top
-4) Manifest function: application cache - Load faster than the 1st time (browser know)
-5) html has opening & closing tag
-6) title of the page (display to the web/browser)
-7) body - body content
-8) always starting with html
-9) meta tag - information to give *not necessary - additional keyword of the page - use to adapt 
-10) viewport - are we provide sufficient info?
-11) keyword - search changing (google, yahoo - user search for a keyword - the more the precise of the result page)
-12) concern about the content viewed by user/clients
-13) provide standard doc to avoid any errors
-14) h1 to h6
+1- The browser is not strict (still can display content) - cons: need to format doc properly
+2- not much info can be taken in html (browser)
+3- Always starting w DOCTYPE HTML- document type HTML - must appear at the top
+4- Manifest function: application cache - Load faster than the 1st time (browser know)
+5- html has opening & closing tag
+6- title of the page (display to the web/browser)
+7- body - body content
+8- always starting with html
+9- meta tag - information to give *not necessary - additional keyword of the page - use to adapt 
+10- viewport - are we provide sufficient info?
+11- keyword - search changing (google, yahoo - user search for a keyword - the more the precise of the result page)
+12- concern about the content viewed by user/clients
+13- provide standard doc to avoid any errors
+14- h1 to h6
 
 
 Classic tag - display the older browser (not recognize semantic tag) eg: <i></i> / <b></b>
@@ -261,11 +261,11 @@ kalau letak external style dgn inline style: page akan baca inline style (unique
  
  code akan baca..
  if
- 1) inline
+ 1- inline
 if else
- 2) internal
+ 2- internal
  else
- 3) External
+ 3- External
 
 
 ID & Class
@@ -640,6 +640,20 @@ button onclick =
 
 event bubbling =
 div1 contains sub div2 container
+
+9/3/2023
+Handling Exceptions
+
+try catch
+-potential of..
+
+finally statement
+
+throw always inside of catch
+the browser catch it
+
+if it is true, then it will skip the throw part
+
 
 
 
