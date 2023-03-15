@@ -654,6 +654,80 @@ the browser catch it
 
 if it is true, then it will skip the throw part
 
+14/3/2023
+jQuery-
+provide some functions
+-much more flexible
+AngularJs - MVW model-view-whatever
+Saas - can have nested rules 
+Saas eg: nav {
+    ul{
+        ...
+    }
+}
+
+always starting from lowercase = naming convention (js)
+noscript = if user cannot run js in their browser (provide message to them by usinh noscript)
+
+js (true/false)
+if php, boolean data ada 3 (either true, false, or on, off)
+
+null is not equal to 0
+loosely-typed 
+(in other lang needs to initialize such as C++ = int 1; but js tak perlu)
+variable type is not required
+
+slice(0,3) starts from 0 and stop at 3
+for(let i = 0; i<3; i++)
+//access element
+    a[i] //[1, 2, 3]
+    3 is not included because 3 is not less than 3 
+
+    js tkde return type (ada identifiers and parentheses)
+    php tkde return type
+
+    js = dynamic
+
+PHP
+
+tags <?php...?>
+
+echo == print function
+variable in php use $
+in php: single quote would be as string 'blabla'
+
+php cannot put in style kot
+can put html inside of php
+
+naming convention = can start with $_name (underscore)
+javascript use + to concatenate
+in php cannot use + to combine variable
+
+Constant variable
+define("N", 10);
+"N" = variable name
+10 = value
+
+Array
+Associative array
+- key-value pair
+- key must be unique (can't duplicate)
+Numeric/indexed array
+
+-array - length (guna count())
+
+js - forin
+php - foreach
+
+
+
+
+
+    
+
+
+
+
 
 
 
