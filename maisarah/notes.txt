@@ -719,6 +719,15 @@ Numeric/indexed array
 js - forin
 php - foreach
 
+15 March 2023
+ make sure key is not duplicate
+
+ Arrays of Array
+ Array can be object/Arrays
+ -can be multidimensional
+ -nested array
+ 
+
 
 
 
