@@ -726,7 +726,21 @@ php - foreach
  Array can be object/Arrays
  -can be multidimensional
  -nested array
+
+ Global variable
+ submit form
+
+ should be encrypted.
+ if set, means it has data ()
+ get data from server ..
+ action and method (two attribute on form)
+
+ for loop
+ for(;;) - infinite loop
+ counter controlled loop - known (declared dkt array)
+
  
+
 
 
 

@@ -13,9 +13,11 @@
     echo "<h1>String</h1>";
 
     $exe39 = "This is a sentence with seven words";
-    $new_exe39 = explode($exe39, 4);
+    $new_exe39 = explode(" ", $exe39);
 
-    print_r($new_exe39);
+    foreach($new_exe39 as $elem){
+        print $elem.'<br>';
+    }
 
 ?>
     
