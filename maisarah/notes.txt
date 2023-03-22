@@ -739,6 +739,26 @@ php - foreach
  for(;;) - infinite loop
  counter controlled loop - known (declared dkt array)
 
+21/3/2023
+PHP function
+Type of functions
+1. Data function (module 9, slide 3 - all built-in)
+- user-defined fx
+pretty close to javascript
+** cannot contain dollar sign($) - '$' to declare as a variable
+- always starts with lowercase and followed by uppercase (tapi php tak strict sgt 
+tpi best practice lah kot)
+
+function functionName(){
+    ..code
+}
+parameter letak dalam functionName tu
+
+
+
+
+
+
  
 
 

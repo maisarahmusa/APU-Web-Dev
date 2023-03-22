@@ -17,13 +17,13 @@
 
 
     <?php
-        if (isset($_POST["vehNoPlate"])) {
-            $plateno= $_POST["vehNoPlate"];
+        // if (isset($_POST["vehNoPlate"])) {
+        //     $plateno= $_POST["vehNoPlate"];
 
-            $pattern = '/^[a-zA-Z0-9\s', $velNoPlate
+        //     $pattern = '/^[a-zA-Z0-9\s', $velNoPlate
 
             
-        }
+        // }
         
     ?>
     
