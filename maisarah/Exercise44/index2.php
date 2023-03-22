@@ -20,7 +20,19 @@
         // parent function name
         // function as value
         // php also support fx as a val
-        function transformName($name){
+
+        // to assign the same value 
+        // old school way
+        $i = 10;
+
+        // assign a value like assign a function
+        // $transformName is stil a fx
+
+        // Turn a function into a variable
+        // to store a fx into a variable
+        // classic way - more flexible
+        // classic way - very conventional
+        $transformName = function ($name){
             return array(
                 "upper" => strtoupper($name),
                 "lower" => strtolower($name),
@@ -33,7 +45,7 @@
         // to check wether the function is callable or not
         // callable is a fx
         // to check callback para is a function or not
-        function showName($arr, $callable){
+        $showName = function ($arr, $callable){
             if(is_callable($callable)){
                 call_user_func($callable, $arr);
             }
