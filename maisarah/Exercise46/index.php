@@ -30,11 +30,17 @@
         // print_r($target_email);
     ?>
 
+<!-- First Method -->
     <?php
         /*Find Function*/
         $Find = function($target, $emailLst){
             return array_filter($emailLst, fn ($e) => $e == $target);
         };
+    ?>
+
+    <!-- Lambda Function -->
+    <?php
+        $Find = fn ($target, $emailLst) => array_filter($emailLst, fn ($e) => $e == target);
     ?>
 
     <?php
@@ -44,10 +50,11 @@
         //Result turns out to be no array (no value)
 
         // $targetEmail = 'maisarah@apiit.edu.my';
-        
+
         $arr = $Find($targetEmail, $emailLst);
         print_r($arr);
     ?>
+
     
 </body>
 </html>
