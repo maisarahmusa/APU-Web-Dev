@@ -1,9 +1,9 @@
 <?php
 
-$sourceFile = '\source.txt';
-$destinationFile = '\destination.txt';
-$sourcePath = __DIR__ . $sourceFile;
-$destinationPath = __DIR__ . $destinationFile;
+$sourceFileName = '\source.txt';
+$destinationFileName = '\destination.txt';
+$sourcePath = __DIR__ . $sourceFileName;
+$destinationPath = __DIR__ . $destinationFileName;
 
 $sourceFile = fopen($sourcePath, 'r');
 $destinationFile = fopen($destinationPath, 'w');
