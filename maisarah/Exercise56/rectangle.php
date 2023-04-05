@@ -1,20 +1,28 @@
 <?php
+
+// standard coding for class
     
 class Rectangle 
 {
-    private int $width;
+    /* instance variables with types */
+    private float $width;
     private float $height;
-    private float $color;
+    private string $color;
 
     /* constructor function */
     public function __construct($width, $height, $color)
     {
+
+        /* call the set function */
+        /* by setting object data */
         $this->setWidth($width);
         $this->setHeight($height);
         $this->setColor($color);
-
     }
 
+    /* findArea & findPerimeter */
+    /* the result may return any form of return type if types do not declare */
+    
     public function findArea()
     {
         return $this->width * $this->height;
@@ -55,10 +63,11 @@ class Rectangle
         $this->color = $color;
     }
 
+    /* format object data into string */
     public function __toString()
     {
-        return "width = {$this->getWidth()} <br> height = {$this->getWidth()} <br>
-        color = {$this->getColor()} <br> Area = {$this->findArea()} 
+        return "Width = {$this->getWidth()} <br> height = {$this->getWidth()} <br>
+        Color = {$this->getColor()} <br> Area = {$this->findArea()} 
         <br> Perimeter = {$this->findPerimeter()}";
     }
 }
