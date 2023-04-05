@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 53 | Async</title>
+  </head>
+  <body>
+    <!-- create login form -->
+    <h1>Login Form</h1>
+    <form>
+      <label for="txtUsername">Username:</label>
+      <input type="text" name="txtUsername" id="txtUsername" />
+      <label for="txtPassword">Password:</label>
+      <input type="password" name="txtPassword" id="txtPassword" />
+      <input type="submit" value="submit" />
+    </form>
+    <p id="result"></p>
+  </body>
+</html>
+<script>
+  var form = document.querySelector("form");
+  var p = document.querySelector("#result");
+  form.addEventListener("submit", function () {
+    event.preventDefault();
+
+    /* represent the form data using FormData object */
+    var formData = new FormData(form);
+
+    /* instanstiate the XMLHttpRequest object */
+    var xhttp = new XMLHttpRequest();
+    /* POST request method; server page is process.php */
+    xhttp.open("post", "doLogin.php");
+    xhttp.send(formData);
+
+    /*  response success */
+    xhttp.onload = function () {
+      p.innerHTML = "<strong>" + xhttp.responseText + "</strong>";
+    };
+
+    /*  response failure */
+    xhttp.onerror = function () {
+      p.innerHTML = "<strong>Network errors!</strong>";
+    };
+  });
+</script>

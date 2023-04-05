@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7 | Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <form>
+        <div class="col-2">
+            <label for="">Username:</label>
+            <input type="text" name="txtUsername" id="txtUsername"/>
+        </div>
+        <div class="col-2">
+            <label for="">Password:</label>
+            <input type="text" name="txtPassword" id="txtPassword"/>
+        </div>
+        <div class="col-2">
+            <button type="submit" value="submit">Login</button>
+            <button>Reset</button>
+        </div>
+    </form>
+    <p id="result"></p>
+    
+    
+</body>
+</html>
+<script>
+  var form = document.querySelector("form");
+  var p = document.querySelector("#result");
+  form.addEventListener("submit", function () {
+    event.preventDefault();
+
+    /* represent the form data using FormData object */
+    var formData = new FormData(form);
+
+    /* instanstiate the XMLHttpRequest object */
+    var xhttp = new XMLHttpRequest();
+    /* POST request method; server page is process.php */
+    xhttp.open("post", "doLogin.php");
+    xhttp.send(formData);
+
+    /*  response success */
+    xhttp.onload = function () {
+      p.innerHTML = "<strong>" + xhttp.responseText + "</strong>";
+    };
+
+    /*  response failure */
+    xhttp.onerror = function () {
+      p.innerHTML = "<strong>Network errors!</strong>";
+    };
+  });
+</script>

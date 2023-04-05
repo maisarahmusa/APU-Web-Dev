@@ -755,6 +755,9 @@ function functionName(){
 parameter letak dalam functionName tu
 
 
+OOP
+
+
 
 
 

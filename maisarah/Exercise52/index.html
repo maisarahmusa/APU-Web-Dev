@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 52 | Async</title>
+  </head>
+  <body>
+    <h1>Guess Game</h1>
+    <form action="" method="">
+      <label for="txtNum">Guess a number: </label>
+      <input type="number" name="txtNum" id="txtNum" min="1" max="10" />
+      <input type="submit" value="submit" />
+    </form>
+    <p id="result"></p>
+  </body>
+</html>
+<script>
+  var form = document.querySelector("form");
+  var p = document.querySelector("#result");
+  form.addEventListener("submit", function () {
+    event.preventDefault();
+
+    /* represent the form data using FormData object */
+    var formData = new FormData(form);
+
+    /* instanstiate the XMLHttpRequest object */
+    var xhttp = new XMLHttpRequest();
+    /* POST request method; server page is process.php */
+    xhttp.open("post", "process.php");
+    xhttp.send(formData);
+
+    /*  response success */
+    xhttp.onload = function () {
+      p.innerHTML = "<strong>" + xhttp.responseText + "</strong>";
+    };
+
+    /*  response failure */
+    xhttp.onerror = function () {
+      p.innerHTML = "<strong>Network errors!</strong>";
+    };
+  });
+</script>
