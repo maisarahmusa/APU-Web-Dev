@@ -5,8 +5,8 @@ $destinationFileName = '\destination.txt';
 $sourcePath = __DIR__ . $sourceFileName;
 $destinationPath = __DIR__ . $destinationFileName;
 
-$sourceFile = fopen($sourcePath, 'r');
-$destinationFile = fopen($destinationPath, 'w');
+$sourceFile = fopen($sourcePath, "r");
+$destinationFile = fopen($destinationPath, "w");
 
 if($sourceFile == false) {
     echo "Source file not available";

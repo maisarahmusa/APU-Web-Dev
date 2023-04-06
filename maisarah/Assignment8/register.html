@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration | Assignment 8</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Registration Form</h1>
+      <form>
+        <div class="table">
+          <div class="row">
+            <div class="cell"><label for="txtUsername">Username:</label></div>
+            <div class="cell">
+              <input
+                type="text"
+                name="txtUsername"
+                id="txtUsername"
+                size="15"
+                required
+                placeholder="txtUsername"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="cell"><label for="txtPassword">Password:</label></div>
+            <div class="cell">
+              <input
+                type="password"
+                name="txtPassword"
+                id="txtPassword"
+                min="4"
+                required
+                placeholder="txtPassword"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="cell"><label for="txtEmail">Email address:</label></div>
+            <div class="cell">
+              <input
+                type="text"
+                name="txtEmail"
+                id="txtEmail"
+                placeholder="txtEmail"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="cell"></div>
+            <div class="cell">
+              <a href="./">Back</a>
+              <input type="submit" value="submit" />
+              <input type="reset" value="reset" />
+            </div>
+          </div>
+        </div>
+      </form>
+      <p id="result"></p>
+    </div>
+  </body>
+</html>
+
+<!-- PLACE YOUR JAVASCRIPT HERE -->
+
+<script>
+  const form = document.querySelector("form");
+  var p = document.querySelector("#result");
+  form.addEventListener("submit", function () {
+    event.preventDefault();
+    var formData = new FormData(form);
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("post", "process.php?action=signup");
+    xhttp.send(formData);
+
+    xhttp.onload = function (e) {
+      var obj = JSON.parse(xhttp.responseText);
+      if (obj == "success") {
+        /* redirect to the login page*/
+        var msg =
+          "Registration is successfully completed. <a href='./'>Login</a>";
+        p.innerHTML = "<pre>" + msg + "</pre>";
+      } else {
+        var errString = "";
+        for (let err of obj) {
+          errString += err + "<br>";
+        }
+        p.innerHTML = "<pre>" + errString + "</pre>";
+      }
+    };
+
+    xhttp.onerror = function (e) {
+      p.innerHTML = "<pre>Network errors!</pre>";
+    };
+  });
+</script>

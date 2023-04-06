@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Assignment 8</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Login Form</h1>
+      <form>
+        <div class="table">
+          <div class="row">
+            <div class="cell"><label for="txtUsername">Username:</label></div>
+            <div class="cell">
+              <input
+                type="text"
+                name="txtUsername"
+                id="txtUsername"
+                required
+                placeholder="Your username"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="cell"><label for="txtPassword">Password:</label></div>
+            <div class="cell">
+              <input
+                type="password"
+                name="txtPassword"
+                id="txtPassword"
+                min="4"
+                required
+                placeholder="Your password"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="cell"></div>
+            <div class="cell">
+              <button id="btnSignUp">SIGN-UP</button>
+              <input type="submit" value="SIGN-IN" />
+            </div>
+          </div>
+        </div>
+      </form>
+      <p id="result"></p>
+    </div>
+  </body>
+</html>
+<!-- PLACE YOUR JAVASCRIPT HERE -->
+
+<script>
+  const form = document.querySelector("form");
+  var p = document.querySelector("#result");
+  form.addEventListener("submit", function () {
+    event.preventDefault();
+    var formData = new FormData(form);
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("post", "process.php?action=signin");
+    xhttp.send(formData);
+
+    xhttp.onload = function (e) {
+      var msg = "";
+      if (xhttp.responseText == "success") {
+        msg = "Login successful!";
+        msg += "<p><a href='./page-content.php'>Page Content</a></p>";
+      } else {
+        msg = "Login failed! Please try again.";
+      }
+      p.innerHTML = "<pre>" + msg + "</pre>";
+    };
+
+    xhttp.onerror = function (e) {
+      p.innerHTML = "<pre>Network errors!</pre>";
+    };
+  });
+
+  document.querySelector("#btnSignUp").addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location.href = "./register.html";
+  });
+</script>
